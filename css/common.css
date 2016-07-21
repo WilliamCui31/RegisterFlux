@@ -1,0 +1,120 @@
+@charset "utf-8";
+/*===== reset =====*/
+html, body, div, p, h1, h2, h3, h4, h5, h6, blockquote,ol, ul, li, dl, dt, dd, form, fieldset, legend, button, input, textarea, pre, code, th, td{margin:0;padding:0;}
+body, button, input, select, textarea{font:14px Microsoft yahei;color:#666;} 
+button,input,select, textarea{font-size:100%;}
+input, img, select {vertical-align:middle; border:none;} 
+iframe{display:block}
+h1, h2, h3, h4, h5, h6{ font-size:100%;font-weight:normal;}
+ul, ol, li{list-style:none;}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}
+code, kbd, pre, samp{font-family:courier new,courier, monospace;} 
+small {font-size:12px;}
+legend{color:#000000;}
+fieldset,img{border:0;}
+table{border-collapse:collapse;border-spacing:0;}
+th{text-align:inherit}
+:focus{outline:0;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after{content:'';}
+em,i{font-weight:normal;font-style:normal}
+a{text-decoration:none;color:#666;}
+a:hover{color:#fb720b;text-decoration:none;}
+.must{position: absolute;left: -15px;top: 12px;color: red;}
+/*===== 字号 =====*/
+.f12{font-size:12px}.f14{font-size:14px;}.f16{font-size:16px;}.f18{font-size:18px;}.f20{font-size:20px;}.f24{font-size:24px;}.f26{font-size:26px;}.f28{font-size:28px;}.f30{font-size:30px;}
+/*===== 清除浮动 =====*/
+.clearfix:before,.clearfix:after{content:"";display:table;}
+.clearfix:after{clear:both;}
+.clearfix{ *zoom:1;/*IE/7/6*/}
+.clear{clear:both;line-height:0;height:0px;overflow:hidden;}
+/*===== margin =====*/
+
+/* input placeholder 文字样式 */
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #ccc;
+    font-size: 14px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #ccc;
+    font-size: 14px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #ccc;
+    font-size: 14px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #ccc;
+    font-size: 14px;
+}
+/* input placeholder 文字样式 */
+
+/* Input component style */
+.nt-input {
+	width: 180px;
+	height: 42px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	border-radius: 3px;
+}
+.nt-input.noRadius {
+	border-radius:0;
+}
+.nt-input:focus {
+	border-color: #89bbff;
+	box-shadow: 1px 1px 5px #B6D5FF,-1px -1px 5px #B6D5FF;
+}
+.nt-input.warning {
+	border-color: #FF0000;
+	box-shadow: 1px 1px 5px #FFA1A1,-1px -1px 5px #FFA1A1;
+}
+.nt-input.success {
+	border-color: #5cb85c;
+	box-shadow: 1px 1px 5px #AFDCAF,-1px -1px 5px #AFDCAF;
+}
+/* input component style */
+
+/* Button component style */
+.nt-button {
+	display: inline-block;
+	width: 180px;
+	height: 42px;
+	border: none;
+	line-height: 40px;
+	color: #FFF;
+	font-size: 16px;
+	border-radius: 3px;
+	cursor: pointer;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #ff7777;
+	outline:none;
+}
+.nt-button.secondary{
+	border: 1px solid #89bbff;
+	color: #89bbff;
+	background-color: #FFF;
+}
+.nt-button.disabled {
+	background-color: #999;
+}
+a.nt-button:hover {
+	color: #FFF;
+}
+/* Button component style */
+
+/* component width */
+*.block{
+	width: 100%;
+}
+*.lg{
+	width: 300px;
+}
+*.sm{
+	width: 100px;
+}
+*.xs{
+	width: 60px;
+}
+/* component width */
