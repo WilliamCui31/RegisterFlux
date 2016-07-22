@@ -1,7 +1,0 @@
-[user]
-	name=WilliamCui31
-	email=444738577@qq.com
-[push]
-	default=matching
-[core]
-	excludesfile=/Users/williamcui/.gitignore_global
