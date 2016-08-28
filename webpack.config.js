@@ -3,17 +3,20 @@ var OpenBrowserPlugin=require('open-browser-webpack-plugin');
 var node_modules=Path.resolve(__dirname, 'node_modules');
 
 var config={
-	entry: [
-		'webpack/hot/dev-server',
-		'webpack-dev-server/client?http://localhost:8888',
-		Path.resolve(__dirname,'./js/app.js')
-	],
+	entry: {
+		main:[
+			'webpack/hot/dev-server',
+			'webpack-dev-server/client?http://localhost:8888',
+			Path.resolve(__dirname,'./js/app.js')
+	    ],
+		other: Path.resolve(__dirname,'./js/other.js')
+	},
 	resolve: {
 		extentions: ['','.js','.jsx']
 	},
 	output: {
 		path: Path.resolve(__dirname,'./'),
-		filename: 'bundle.js'
+		filename: '[name].js'
 	},
 	module: {
 		loaders: [{

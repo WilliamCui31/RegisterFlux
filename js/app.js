@@ -8,7 +8,6 @@ var Router=require('react-router').Router;
 var Route=require('react-router').Route;
 var IndexRoute=require('react-router').IndexRoute;
 var browserHistory=require('react-router').browserHistory;
-var hashHistory=require('react-router').hashHistory;
 var IndexRedirect=require('react-router').IndexRedirect;
 
 ReactDOM.render(
